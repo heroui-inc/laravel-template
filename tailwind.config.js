@@ -20,5 +20,5 @@ export default {
         },
     },
     darkMode: "class",
-    plugins: [forms,heroui()],
+    plugins: [heroui()],
 };
