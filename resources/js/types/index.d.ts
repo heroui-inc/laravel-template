@@ -1,3 +1,5 @@
+import {SVGProps} from "react";
+
 export interface User {
     id: number;
     name: string;
@@ -11,4 +13,8 @@ export type PageProps<
     auth: {
         user: User;
     };
+};
+
+export type IconSvgProps = SVGProps<SVGSVGElement> & {
+    size?: number;
 };
