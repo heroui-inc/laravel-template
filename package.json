@@ -5,6 +5,10 @@
         "build": "tsc && vite build",
         "dev": "vite"
     },
+    "dependencies": {
+        "@heroui/react": "2.7.6",
+        "framer-motion": "^11.15.0"
+    },
     "devDependencies": {
         "@headlessui/react": "^2.0.0",
         "@inertiajs/react": "^2.0.0",
@@ -23,9 +27,5 @@
         "tailwindcss": "^3.2.1",
         "typescript": "^5.0.2",
         "vite": "^6.0"
-    },
-    "dependencies": {
-        "@heroui/react": "2.6.13",
-        "framer-motion": "^11.15.0"
     }
 }
