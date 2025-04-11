@@ -12,6 +12,7 @@ import {
   NavbarMenuItem,
 } from "@heroui/navbar";
 import { link as linkStyles } from "@heroui/theme";
+import { Link as InternalLink } from '@inertiajs/react';
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
@@ -63,7 +64,7 @@ export const Navbar = () => {
         <div className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
-              <Link
+              <InternalLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium",
@@ -72,7 +73,7 @@ export const Navbar = () => {
                 href={item.href}
               >
                 {item.label}
-              </Link>
+              </InternalLink>
             </NavbarItem>
           ))}
         </div>
