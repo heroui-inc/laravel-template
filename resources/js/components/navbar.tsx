@@ -1,6 +1,7 @@
 import { Button } from "@heroui/button";
 import { Kbd } from "@heroui/kbd";
 import { Link } from "@heroui/link";
+import { Link as InternalLink } from '@inertiajs/react';
 import { Input } from "@heroui/input";
 import {
   Navbar as HeroUINavbar,
@@ -12,7 +13,6 @@ import {
   NavbarMenuItem,
 } from "@heroui/navbar";
 import { link as linkStyles } from "@heroui/theme";
-import { Link as InternalLink } from '@inertiajs/react';
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
