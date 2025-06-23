@@ -1,6 +1,7 @@
 import { Button } from "@heroui/button";
 import { Kbd } from "@heroui/kbd";
 import { Link } from "@heroui/link";
+import { Link as InternalLink } from '@inertiajs/react';
 import { Input } from "@heroui/input";
 import {
   Navbar as HeroUINavbar,
@@ -51,7 +52,7 @@ export const Navbar = () => {
     <HeroUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
-          <Link
+          <InternalLink
             className="flex justify-start items-center gap-1"
             color="foreground"
             href="/"
@@ -63,7 +64,7 @@ export const Navbar = () => {
         <div className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
-              <Link
+              <InternalLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium",
@@ -72,7 +73,7 @@ export const Navbar = () => {
                 href={item.href}
               >
                 {item.label}
-              </Link>
+              </InternalLink>
             </NavbarItem>
           ))}
         </div>
