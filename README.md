@@ -19,7 +19,7 @@ This is a template for creating applications using Laravel 11 and HeroUI (v2).
 To create a new project based on this template using `create-laravel`, run the following command:
 
 ```bash
-npx create-next-app -e https://github.com/heroui-inc/laravel-template.git
+npx create-next-app -e https://github.com/heroui-inc/laravel-template
 ```
 
 After creating the project you will have the base template using Laravel 11.31
